@@ -14,6 +14,7 @@ pub struct CompiledModule {
 }
 
 /// The artifacts of a compiled contract.
+#[derive(Debug, Clone)]
 pub struct CompiledContract {
     pub json_abi: String,
     pub yul: String,
